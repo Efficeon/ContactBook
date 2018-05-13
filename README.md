@@ -22,7 +22,7 @@ Tables will be created after the application will be started.
 - application page
 'http://localhost:8899/index.faces'
 
-# TestContactServis Task:
+# Test task:
 
 Необходимо реализовать web приложение контактная книга, которое содержит таблицу контактов(Имя, фамилия, номер телефона - имя и фамилия поля обязательные для ввода) и кнопку добавить. По нажатию на кнопку показывается диалог для ввода информации о контакте.
 
