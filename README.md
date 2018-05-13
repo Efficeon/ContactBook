@@ -9,17 +9,17 @@
 
 ### Database
 You need create data base 'db_contact' in MySQL Server.
-Name DB or user credentials fof DB you can change in 'application.properties'
+Name DB or user credentials for DB you can change in 'application.properties'
 
-Tables will be created after the application starts.
+Tables will be created after the application will be started.
 
 ### Build application
 - Navigate to project directory
-- mvn clean install
+'mvn clean install'
 
 ### Run application
 - Navigate to project directory
-- mvn spring-boot:run
+'mvn spring-boot:run'
 
 - application page
 'http://localhost:8899/index.faces'
