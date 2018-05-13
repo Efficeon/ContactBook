@@ -10,7 +10,7 @@
     <h:body>
 
         <h:form id="form">
-            <p:dataTable id="personList" value="#{contactView.contactList}" var="contact">
+            <p:dataTable id="contactList" value="#{contactView.contactList}" var="contact">
                 <p:column>
                     <f:facet name="header">
                         <h:outputText value="Id" />
@@ -42,30 +42,30 @@
         <h:form>
             <p:commandButton value="Add contact" onclick="PF('dlg').show();" type="button" icon="ui-icon-extlink" />
 
-            <p:dialog header="Add contact" widgetVar="dlg" focus="newName">
+            <p:dialog header="Add contact" widgetVar="dlg" focus="name2">
                 <h:panelGrid columns="2" cellpadding="5">
 
-                    <h:outputLabel for="newName" value="Name:" />
-                    <p:inputText id="newName" label="newName" value="#{contactView.name}">
+                    <h:outputLabel for="name2" value="Name:" />
+                    <p:inputText id="name2" label="name2" value="#{contactView.name}">
                         <f:validateLength minimum="3" />
-                        <p:ajax event="blur" update="newNameMsg" />
+                        <p:ajax event="blur" update="name2Msg" />
                     </p:inputText>
-                    <p:message id="newNameMsg" for="newName" display="icon"/>
+                    <p:message id="name2Msg" for="name2" display="icon"/>
                     <br/>
 
-                    <h:outputLabel for="NewlastName" value="Surname:" />
-                    <p:inputText id="NewlastName" label="NewlastName" value="#{contactView.lastName}">
+                    <h:outputLabel for="lastName2" value="Surname:" />
+                    <p:inputText id="lastName2" label="lastName2" value="#{contactView.lastName}">
                         <f:validateLength minimum="3" />
-                        <p:ajax event="blur" update="NewlastNameMsg" />
+                        <p:ajax event="blur" update="lastName2Msg" />
                     </p:inputText>
-                    <p:message id="NewlastNameMsg" for="NewlastName" display="icon"/>
+                    <p:message id="lastName2Msg" for="lastName2" display="icon"/>
                     <br/>
 
-                    <h:outputLabel for="newPhone" value="Phone : " />
-                    <p:inputText id="newPhone" value="#{contactView.phone}">
-                        <p:ajax event="blur" update="newPhoneMsg" />
+                    <h:outputLabel for="phone1" value="Phone : " />
+                    <p:inputText id="phone1" value="#{contactView.phone}">
+                        <p:ajax event="blur" update="phoneMsg" />
                     </p:inputText>
-                        <p:message id="newPhoneMsg" for="newPhone" display="icon"/>
+                        <p:message id="phoneMsg" for="phone1" display="icon"/>
 
                     <p:commandButton id="addUser" value="Add" action="#{contactView.add}" ajax="false"/>
 

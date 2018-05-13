@@ -1,0 +1,10 @@
+com/ContactBook/service/ContactService.class
+com/ContactBook/ApplicationRun.class
+com/ContactBook/model/Contact$ContactBuilder.class
+com/ContactBook/repository/ContactRepository.class
+com/ContactBook/service/ContactServiceImpl.class
+com/ContactBook/configuration/ServletInitializer.class
+com/ContactBook/configuration/ConfigureJSF.class
+com/ContactBook/configuration/ConfigureJSF$JsfServletRegistrationBean.class
+com/ContactBook/model/Contact.class
+com/ContactBook/view/ContactView.class
