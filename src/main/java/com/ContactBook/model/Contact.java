@@ -18,12 +18,15 @@ public class Contact {
 	@Id
 	@GeneratedValue
 	@Column(name = "id")
+	@NonNull
 	private long id;
 
 	@Column(name = "name")
+	@NonNull
 	private String name;
 
 	@Column(name = "last_name")
+	@NonNull
 	private String lastName;
 
 	@Column(name = "phone")
