@@ -14,11 +14,9 @@ Name DB or user credentials for DB you can change in 'application.properties'
 Tables will be created after the application will be started.
 
 ### Build application
-- Navigate to project directory
 'mvn clean install'
 
 ### Run application
-- Navigate to project directory
 'mvn spring-boot:run'
 
 - application page
