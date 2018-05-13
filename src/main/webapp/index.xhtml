@@ -1,0 +1,77 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:p="http://primefaces.org/ui">
+
+<f:view>
+    <h:head>
+        <title>Contact Book</title>
+    </h:head>
+    <h:body>
+
+        <h:form id="form">
+            <p:dataTable id="personList" value="#{contactView.contactList}" var="contact">
+                <p:column>
+                    <f:facet name="header">
+                        <h:outputText value="Id" />
+                    </f:facet>
+                    <h:outputText value="#{contact.id}" />
+                </p:column>
+                <p:column>
+                    <f:facet name="header">
+                        <h:outputText value="Name" />
+                    </f:facet>
+                    <h:outputText value="#{contact.name}" />
+                </p:column>
+                <p:column>
+                    <f:facet name="header">
+                        <h:outputText value="Last Name" />
+                    </f:facet>
+                    <h:outputText value="#{contact.lastName}" />
+                </p:column>
+                <p:column>
+                    <f:facet name="header">
+                        <h:outputText value="phone" />
+                    </f:facet>
+                    <h:outputText value="#{contact.phone}" />
+                </p:column>
+            </p:dataTable>
+        </h:form>
+
+
+        <h:form>
+            <p:commandButton value="Add contact" onclick="PF('dlg').show();" type="button" icon="ui-icon-extlink" />
+
+            <p:dialog header="Add contact" widgetVar="dlg" focus="newName">
+                <h:panelGrid columns="2" cellpadding="5">
+
+                    <h:outputLabel for="newName" value="Name:" />
+                    <p:inputText id="newName" label="newName" value="#{contactView.name}">
+                        <f:validateLength minimum="3" />
+                        <p:ajax event="blur" update="newNameMsg" />
+                    </p:inputText>
+                    <p:message id="newNameMsg" for="newName" display="icon"/>
+                    <br/>
+
+                    <h:outputLabel for="NewlastName" value="Surname:" />
+                    <p:inputText id="NewlastName" label="NewlastName" value="#{contactView.lastName}">
+                        <f:validateLength minimum="3" />
+                        <p:ajax event="blur" update="NewlastNameMsg" />
+                    </p:inputText>
+                    <p:message id="NewlastNameMsg" for="NewlastName" display="icon"/>
+                    <br/>
+
+                    <h:outputLabel for="newPhone" value="Phone : " />
+                    <p:inputText id="newPhone" value="#{contactView.phone}">
+                        <p:ajax event="blur" update="newPhoneMsg" />
+                    </p:inputText>
+                        <p:message id="newPhoneMsg" for="newPhone" display="icon"/>
+
+                    <p:commandButton id="addUser" value="Add" action="#{contactView.add}" ajax="false"/>
+
+                </h:panelGrid>
+            </p:dialog>
+        </h:form>
+    </h:body>
+</f:view>
+</html>
