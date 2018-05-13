@@ -1,5 +1,5 @@
 package com.ContactBook.service;
-;
+
 import com.ContactBook.model.Contact;
 import com.ContactBook.repository.ContactRepository;
 import org.springframework.beans.factory.annotation.Autowired;

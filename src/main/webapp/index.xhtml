@@ -46,7 +46,7 @@
                 <h:panelGrid columns="2" cellpadding="5">
 
                     <h:outputLabel for="name2" value="Name:" />
-                    <p:inputText id="name2" label="name2" value="#{contactView.name}">
+                    <p:inputText id="name2" label="name2" value="#{contactView.name}" validatorMessage="Invalid email format">
                         <f:validateLength minimum="3" />
                         <p:ajax event="blur" update="name2Msg" />
                     </p:inputText>
@@ -54,7 +54,7 @@
                     <br/>
 
                     <h:outputLabel for="lastName2" value="Surname:" />
-                    <p:inputText id="lastName2" label="lastName2" value="#{contactView.lastName}">
+                    <p:inputText id="lastName2" label="lastName2" value="#{contactView.lastName}" validatorMessage="Invalid email format">
                         <f:validateLength minimum="3" />
                         <p:ajax event="blur" update="lastName2Msg" />
                     </p:inputText>

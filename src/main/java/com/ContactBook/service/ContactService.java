@@ -1,6 +1,5 @@
 package com.ContactBook.service;
 
-
 import com.ContactBook.model.Contact;
 
 import java.util.List;
