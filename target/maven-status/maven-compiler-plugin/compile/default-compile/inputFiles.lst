@@ -1,8 +1,8 @@
-/home/efficeon/IdeaProjects/ContactBook/src/main/java/com/ContactBook/repository/ContactRepository.java
-/home/efficeon/IdeaProjects/ContactBook/src/main/java/com/ContactBook/ApplicationRun.java
-/home/efficeon/IdeaProjects/ContactBook/src/main/java/com/ContactBook/configuration/ConfigureJSF.java
-/home/efficeon/IdeaProjects/ContactBook/src/main/java/com/ContactBook/service/ContactServiceImpl.java
-/home/efficeon/IdeaProjects/ContactBook/src/main/java/com/ContactBook/service/ContactService.java
-/home/efficeon/IdeaProjects/ContactBook/src/main/java/com/ContactBook/model/Contact.java
-/home/efficeon/IdeaProjects/ContactBook/src/main/java/com/ContactBook/view/ContactView.java
-/home/efficeon/IdeaProjects/ContactBook/src/main/java/com/ContactBook/configuration/ServletInitializer.java
+/home/efficeon/IdeaProjects/ContactBook/src/main/java/com/contactbook/model/Contact.java
+/home/efficeon/IdeaProjects/ContactBook/src/main/java/com/contactbook/configuration/ServletInitializer.java
+/home/efficeon/IdeaProjects/ContactBook/src/main/java/com/contactbook/configuration/JSFConfiguration.java
+/home/efficeon/IdeaProjects/ContactBook/src/main/java/com/contactbook/view/ContactView.java
+/home/efficeon/IdeaProjects/ContactBook/src/main/java/com/contactbook/ApplicationRun.java
+/home/efficeon/IdeaProjects/ContactBook/src/main/java/com/contactbook/service/ContactService.java
+/home/efficeon/IdeaProjects/ContactBook/src/main/java/com/contactbook/service/ContactServiceImpl.java
+/home/efficeon/IdeaProjects/ContactBook/src/main/java/com/contactbook/repository/ContactRepository.java

@@ -10,14 +10,12 @@ import java.util.List;
 @Service("contactService")
 public class ContactServiceImpl implements ContactService {
 
+	private ContactRepository contactRepository;
+
 	@Autowired
 	public ContactServiceImpl(ContactRepository contactRepository) {
 		this.contactRepository = contactRepository;
 	}
-
-	private ContactRepository contactRepository;
-
-
 
 	@Override
 	public List<Contact> getAllContacts() {
