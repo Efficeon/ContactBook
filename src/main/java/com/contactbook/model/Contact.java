@@ -1,4 +1,4 @@
-package com.ContactBook.model;
+package com.contactbook.model;
 
 import lombok.*;
 

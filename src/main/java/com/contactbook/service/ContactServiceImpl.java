@@ -1,7 +1,7 @@
-package com.ContactBook.service;
+package com.contactbook.service;
 
-import com.ContactBook.model.Contact;
-import com.ContactBook.repository.ContactRepository;
+import com.contactbook.model.Contact;
+import com.contactbook.repository.ContactRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -11,7 +11,13 @@ import java.util.List;
 public class ContactServiceImpl implements ContactService {
 
 	@Autowired
+	public ContactServiceImpl(ContactRepository contactRepository) {
+		this.contactRepository = contactRepository;
+	}
+
 	private ContactRepository contactRepository;
+
+
 
 	@Override
 	public List<Contact> getAllContacts() {
@@ -19,7 +25,7 @@ public class ContactServiceImpl implements ContactService {
 	}
 
 	@Override
-	public void addContact(Contact contact) {
-		contactRepository.save(contact);
+	public Contact addContact(Contact contact) {
+		return contactRepository.save(contact);
 	}
 }

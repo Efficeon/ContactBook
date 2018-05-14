@@ -1,6 +1,6 @@
-package com.ContactBook.configuration;
+package com.contactbook.configuration;
 
-import com.ContactBook.ApplicationRun;
+import com.contactbook.ApplicationRun;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.support.SpringBootServletInitializer;
 

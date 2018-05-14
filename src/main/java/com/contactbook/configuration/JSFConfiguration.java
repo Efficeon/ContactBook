@@ -1,4 +1,4 @@
-package com.ContactBook.configuration;
+package com.contactbook.configuration;
 
 import com.sun.faces.config.FacesInitializer;
 import org.springframework.boot.web.servlet.ServletRegistrationBean;
@@ -11,7 +11,7 @@ import java.util.HashSet;
 import java.util.Set;
 
 @Configuration
-public class ConfigureJSF {
+public class JSFConfiguration {
 
 	@Bean
 	public ServletRegistrationBean facesServletRegistration() {
@@ -28,7 +28,7 @@ public class ConfigureJSF {
 			FacesInitializer facesInitializer = new FacesInitializer();
 
 			Set<Class<?>> classes = new HashSet<Class<?>>();
-			classes.add(ConfigureJSF.class);
+			classes.add(JSFConfiguration.class);
 			facesInitializer.onStartup(classes, servletContext);
 		}
 	}

@@ -1,6 +1,6 @@
-package com.ContactBook.view;
-import com.ContactBook.model.Contact;
-import com.ContactBook.service.ContactService;
+package com.contactbook.view;
+import com.contactbook.model.Contact;
+import com.contactbook.service.ContactService;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -26,12 +26,12 @@ public class ContactView {
     private String lastName;
     private String phone;
 
-    public void add(){
+    public Contact add(){
             Contact contact = new Contact();
             contact.setName(getName());
             contact.setLastName(getLastName());
             contact.setPhone(getPhone());
-            contactService.addContact(contact);
+            return contactService.addContact(contact);
     }
 
     public List<Contact> getContactList() {
