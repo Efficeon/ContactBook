@@ -25,18 +25,10 @@ public class RepositoryContactServiceTest {
 
     private ContactRepository contactRepositoryMock;
 
-    private List<Contact> listContacts;
-
     @Before
     public void setUp() {
         contactRepositoryMock = mock(ContactRepository.class);
         contactService = new ContactServiceImpl(contactRepositoryMock);
-    }
-
-    @Test
-    public void getAllContact(){
-        listContacts = contactService.getAllContacts();
-        Assert.assertNotNull(listContacts);
     }
 
     @Test
