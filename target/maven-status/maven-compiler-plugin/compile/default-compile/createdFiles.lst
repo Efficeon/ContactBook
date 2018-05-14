@@ -1,10 +1,9 @@
 com/contactbook/service/ContactServiceImpl.class
 com/contactbook/configuration/JSFConfiguration.class
 com/contactbook/model/Contact.class
-com/contactbook/service/ContactService.class
-com/contactbook/configuration/ServletInitializer.class
 com/contactbook/model/Contact$ContactBuilder.class
 com/contactbook/ApplicationRun.class
 com/contactbook/repository/ContactRepository.class
 com/contactbook/configuration/JSFConfiguration$JsfServletRegistrationBean.class
 com/contactbook/view/ContactView.class
+com/contactbook/service/ContactService.class
