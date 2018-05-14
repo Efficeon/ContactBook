@@ -21,7 +21,7 @@ public class RepositoryContactServiceTest {
     private static final String FIRST_NAME = "Contact_name";
     private static final String LAST_NAME = "Contact_lastName";
 
-    ContactService contactService;
+    private ContactService contactService;
 
     private ContactRepository contactRepositoryMock;
 
