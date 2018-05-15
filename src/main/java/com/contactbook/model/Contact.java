@@ -23,6 +23,7 @@ public class Contact {
 	@NonNull
 	private String name;
 
+	@Column(name = "last_name")
 	@NonNull
 	private String lastName;
 
