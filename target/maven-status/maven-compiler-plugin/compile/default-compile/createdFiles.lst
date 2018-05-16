@@ -1,5 +1,5 @@
-com/contactbook/service/ContactServiceImpl.class
 com/contactbook/configuration/JSFConfiguration.class
+com/contactbook/service/ContactServiceImpl.class
 com/contactbook/model/Contact.class
 com/contactbook/model/Contact$ContactBuilder.class
 com/contactbook/ApplicationRun.class
